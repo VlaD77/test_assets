@@ -11,10 +11,11 @@ public class crossHair : MonoBehaviour {
             //текстура прицела
 
             public Texture2D crossHairTexture;
+	
 
             private Rect crossHairPosition;
 
- 
+
 
             // Use this for initialization
 
@@ -23,7 +24,8 @@ public class crossHair : MonoBehaviour {
                         //вычисляем положение текстуры прицела, так чтобы он был по центру
 
                         //монитора
-
+		
+		
                         crossHairPosition = new Rect((Screen.width - crossHairTexture.width)/2,
 
                                                      (Screen.height - crossHairTexture.height)/2,
@@ -39,7 +41,8 @@ public class crossHair : MonoBehaviour {
                        //прорисуем текстуру прицела
 
                         GUI.DrawTexture(crossHairPosition, crossHairTexture);
-
+		
             }
+	
 
 }

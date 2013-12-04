@@ -10,7 +10,7 @@ public class OnOffLight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-	if (Input.GetKey(KeyCode.L)){
+	if (Input.GetKeyDown(KeyCode.L)){
 			 l.enabled = !l.enabled;
 			
 		}
